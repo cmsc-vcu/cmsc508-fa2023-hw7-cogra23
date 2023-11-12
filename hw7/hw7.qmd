@@ -264,8 +264,7 @@ df
 sql = f"""
 SELECT people_first_name, people_last_name, people_email
 FROM people
-ORDER BY people_last_name DESC;
-
+ORDER BY ABS(people_last_name)
 """
 ```
 
@@ -277,8 +276,7 @@ ORDER BY people_last_name DESC;
 sql = f"""
 SELECT people_first_name, people_last_name, people_email
 FROM people
-ORDER BY people_last_name DESC;
-
+ORDER BY ABS(people_last_name)
 """
 try:
     df = pd.read_sql(sql,cnx)

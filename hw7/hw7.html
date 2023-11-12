@@ -3834,9 +3834,8 @@ z-index: 1000;
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>sql <span class="op">=</span> <span class="ss">f&quot;&quot;&quot;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ss">SELECT people_first_name, people_last_name, people_email</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ss">FROM people</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">ORDER BY people_last_name DESC;</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ss">&quot;&quot;&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="ss">ORDER BY ABS(people_last_name)</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="ss">&quot;&quot;&quot;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell" data-execution_count="11">
 <div class="cell-output cell-output-display" data-execution_count="11">
@@ -3855,27 +3854,27 @@ z-index: 1000;
 <tbody>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">0</td>
-<td>David</td>
-<td>Person 9</td>
-<td>david.person9@example.com</td>
+<td>John</td>
+<td>Person 1</td>
+<td>john.person1@example.com</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">1</td>
-<td>Sarah</td>
-<td>Person 8</td>
-<td>sarah.person8@example.com</td>
+<td>Jane</td>
+<td>Person 2</td>
+<td>jane.person2@example.com</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">2</td>
-<td>Michael</td>
-<td>Person 7</td>
-<td>michael.person7@example.com</td>
+<td>Alice</td>
+<td>Person 3</td>
+<td>alice.person3@example.com</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">3</td>
-<td>Grace</td>
-<td>Person 6</td>
-<td>grace.person6@example.com</td>
+<td>Eve</td>
+<td>Person 4</td>
+<td>eve.person4@example.com</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">4</td>
@@ -3885,33 +3884,33 @@ z-index: 1000;
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">5</td>
-<td>Eve</td>
-<td>Person 4</td>
-<td>eve.person4@example.com</td>
+<td>Grace</td>
+<td>Person 6</td>
+<td>grace.person6@example.com</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">6</td>
-<td>Alice</td>
-<td>Person 3</td>
-<td>alice.person3@example.com</td>
+<td>Michael</td>
+<td>Person 7</td>
+<td>michael.person7@example.com</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">7</td>
-<td>Jane</td>
-<td>Person 2</td>
-<td>jane.person2@example.com</td>
+<td>Sarah</td>
+<td>Person 8</td>
+<td>sarah.person8@example.com</td>
 </tr>
 <tr class="odd">
 <td data-quarto-table-cell-role="th">8</td>
-<td>Olivia</td>
-<td>Person 10</td>
-<td>olivia.person10@example.com</td>
+<td>David</td>
+<td>Person 9</td>
+<td>david.person9@example.com</td>
 </tr>
 <tr class="even">
 <td data-quarto-table-cell-role="th">9</td>
-<td>John</td>
-<td>Person 1</td>
-<td>john.person1@example.com</td>
+<td>Olivia</td>
+<td>Person 10</td>
+<td>olivia.person10@example.com</td>
 </tr>
 </tbody>
 </table>
